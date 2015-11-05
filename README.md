@@ -1,5 +1,7 @@
 # clandmark
 
+**NOTE: This fork has been optimized for a Linux build. Use the primary repository for any Windows builds.**
+
 [![Join the chat at https://gitter.im/uricamic/clandmark](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/uricamic/clandmark?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 ## Open Source Landmarking Library

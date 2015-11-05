@@ -256,6 +256,12 @@ public:
 	 */
 	inline int getLandmarksCount(void) { return vertices.size(); }
 
+    /**
+     * @brief getVertices
+     * @return
+     */
+    inline const std::vector<Vertex>& getVertices(void) { return vertices; }
+
 	/**
 	 * @brief getEdgesCount
 	 * @return
