@@ -11,7 +11,7 @@
 #ifndef _CDAGMAXSUMSOLVER_H__
 #define _CDAGMAXSUMSOLVER_H__
 
-#include "CMaxSumSolver.h"
+#include <clandmark/CMaxSumSolver.h>
 
 namespace clandmark {
 

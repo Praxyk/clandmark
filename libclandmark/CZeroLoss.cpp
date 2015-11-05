@@ -6,7 +6,7 @@
 //
 //
 
-#include "CZeroLoss.h"
+#include <clandmark/CZeroLoss.h>
 
 using namespace clandmark;
 

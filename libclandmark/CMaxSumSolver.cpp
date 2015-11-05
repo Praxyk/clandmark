@@ -1,4 +1,4 @@
-#include "CMaxSumSolver.h"
+#include <clandmark/CMaxSumSolver.h>
 
 using namespace clandmark;
 

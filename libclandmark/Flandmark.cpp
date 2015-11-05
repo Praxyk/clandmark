@@ -1,14 +1,14 @@
-#include "Flandmark.h"
+#include <clandmark/Flandmark.h>
 
-#include "CTreeMaxSumSolver.h"
-//#include "CSparseLBPFeatures.h"
-#include "CSparseLBPAppearanceModel.h"
-//#include "CExtendedSparseLBPAppearanceModel.h"
-//#include "CHOGAppearanceModel.h"
-#include "CDisplacementDeformationCost.h"
-#include "CNormalizedEuclideanLoss.h"
-#include "CTableLoss.h"
-#include "CZeroLoss.h"
+#include <clandmark/CTreeMaxSumSolver.h>
+//#include <clandmark/CSparseLBPFeatures.h>
+#include <clandmark/CSparseLBPAppearanceModel.h>
+//#include <clandmark/CExtendedSparseLBPAppearanceModel.h>
+//#include <clandmark/CHOGAppearanceModel.h>
+#include <clandmark/CDisplacementDeformationCost.h>
+#include <clandmark/CNormalizedEuclideanLoss.h>
+#include <clandmark/CTableLoss.h>
+#include <clandmark/CZeroLoss.h>
 
 #include <fstream>
 #include <cmath>

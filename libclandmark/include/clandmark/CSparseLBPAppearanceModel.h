@@ -11,8 +11,8 @@
 #ifndef _CSPARSELBPAPPEARANCEMODEL_H__
 #define _CSPARSELBPAPPEARANCEMODEL_H__
 
-#include "CAppearanceModel.h"
-#include "CSparseLBPFeatures.h"
+#include <clandmark/CAppearanceModel.h>
+#include <clandmark/CSparseLBPFeatures.h>
 
 namespace clandmark {
 

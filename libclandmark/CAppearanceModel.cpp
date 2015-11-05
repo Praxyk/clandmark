@@ -1,4 +1,4 @@
-#include "CAppearanceModel.h"
+#include <clandmark/CAppearanceModel.h>
 
 using namespace clandmark;
 

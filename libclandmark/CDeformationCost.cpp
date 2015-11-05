@@ -1,4 +1,4 @@
-#include "CDeformationCost.h"
+#include <clandmark/CDeformationCost.h>
 
 using namespace clandmark;
 

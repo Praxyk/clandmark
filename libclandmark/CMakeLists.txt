@@ -1,12 +1,7 @@
-CONFIGURE_FILE(
-    ${CMAKE_CURRENT_SOURCE_DIR}/CLandmarkConfig.h.in
-    ${CMAKE_CURRENT_BINARY_DIR}/CLandmarkConfig.h
-)
-
 INCLUDE_DIRECTORIES(
     ${CMAKE_SOURCE_DIR}/3rd_party/CImg-1.5.6
     ${CMAKE_SOURCE_DIR}/3rd_party/rapidxml-1.13
-    ${CMAKE_CURRENT_SOURCE_DIR}
+    ${CMAKE_CURRENT_SOURCE_DIR}/include
     ${CMAKE_CURRENT_BINARY_DIR}
 )
 
@@ -54,28 +49,31 @@ ADD_LIBRARY(clandmark SHARED ${clandmark_srcs})
 TARGET_LINK_LIBRARIES(clandmark ${clandmark_libs})
 
 SET(clandmark_headers
-    base64.h
-    CAppearanceModel.h
-    CDAGMaxSumSolver.h
-    CDeformationCost.h
-    CDisplacementDeformationCost.h
-    CFeaturePool.h
-    CFeatures.h
-    CLandmark.h
-    CLoss.h
-    CMaxSumSolver.h
-    CNormalizedEuclideanLoss.h
-    CSparseLBPAppearanceModel.h
-    CSparseLBPFeatures.h
-    CTableLoss.h
-    CTimer.h
-    CTreeMaxSumSolver.h
-    CTypes.h
-    CXMLInOut.h
-    CZeroLoss.h
-    Flandmark.h
-    helpers.h
-    msvc-compat.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/include/clandmark/base64.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/include/clandmark/CAppearanceModel.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/include/clandmark/CDAGMaxSumSolver.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/include/clandmark/CDeformationCost.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/include/clandmark/CDisplacementDeformationCost.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/include/clandmark/CFeaturePool.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/include/clandmark/CFeatures.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/include/clandmark/CLandmark.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/include/clandmark/CLoss.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/include/clandmark/CMaxSumSolver.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/include/clandmark/CNormalizedEuclideanLoss.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/include/clandmark/CSparseLBPAppearanceModel.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/include/clandmark/CSparseLBPFeatures.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/include/clandmark/CTableLoss.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/include/clandmark/CTimer.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/include/clandmark/CTreeMaxSumSolver.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/include/clandmark/CTypes.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/include/clandmark/CXMLInOut.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/include/clandmark/CZeroLoss.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/include/clandmark/Flandmark.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/include/clandmark/helpers.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/include/clandmark/msvc-compat.h
+)
+
+SET(third_party_headers
     ${CMAKE_SOURCE_DIR}/3rd_party/CImg-1.5.6/CImg.h
     ${CMAKE_SOURCE_DIR}/3rd_party/rapidxml-1.13/rapidxml.hpp
     ${CMAKE_SOURCE_DIR}/3rd_party/rapidxml-1.13/rapidxml_iterators.hpp
@@ -85,6 +83,10 @@ SET(clandmark_headers
 
 INSTALL(
     FILES ${clandmark_headers}
+    DESTINATION ${INCLUDE_DIR}/clandmark COMPONENT Headers
+)
+INSTALL(
+    FILES ${third_party_headers}
     DESTINATION ${INCLUDE_DIR} COMPONENT Headers
 )
 INSTALL(

@@ -8,7 +8,7 @@
  * Copyright (C) 2014, 2015 Michal Uricar
  */
 
-#include "CFeatures.h"
+#include <clandmark/CFeatures.h>
 
 #include <vector>
 

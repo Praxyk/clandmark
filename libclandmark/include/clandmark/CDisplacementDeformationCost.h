@@ -11,7 +11,7 @@
 #ifndef _CDISPLACEMENTDEFORMATIONCOST_H__
 #define _CDISPLACEMENTDEFORMATIONCOST_H__
 
-#include "CDeformationCost.h"
+#include <clandmark/CDeformationCost.h>
 
 namespace clandmark {
 

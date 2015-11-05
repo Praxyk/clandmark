@@ -1,4 +1,4 @@
-#include "CLoss.h"
+#include <clandmark/CLoss.h>
 
 // DEBUG
 #include <iostream>

@@ -11,13 +11,13 @@
 #ifndef _CDEFORMATIONCOST_H__
 #define _CDEFORMATIONCOST_H__
 
-#include "CAppearanceModel.h"
+#include <clandmark/CAppearanceModel.h>
 
 #define cimg_verbosity 1        // we don't need window output capabilities of CImg
 #define cimg_display 0          // we don't need window output capabilities of CImg
-#include "CImg.h"
+#include <CImg.h>
 
-#include "CXMLInOut.h"
+#include <clandmark/CXMLInOut.h>
 
 namespace clandmark {
 

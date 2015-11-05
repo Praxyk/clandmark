@@ -1,4 +1,4 @@
-#include "CTreeMaxSumSolver.h"
+#include <clandmark/CTreeMaxSumSolver.h>
 
 #include <cstring>
 #include <cfloat>
@@ -8,7 +8,7 @@
 //=== DEBUG (SPEED UP) ===
 //#define DEBUG_SPEED
 #ifdef DEBUG_SPEED
-	#include "CTimer.h"
+	#include <clandmark/CTimer.h>
 #endif
 
 //#define DEBUG

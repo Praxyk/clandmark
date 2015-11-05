@@ -1,4 +1,4 @@
-#include "CFeatures.h"
+#include <clandmark/CFeatures.h>
 
 using namespace clandmark;
 

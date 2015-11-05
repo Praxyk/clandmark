@@ -11,17 +11,17 @@
 #ifndef _APPEARANCEMODEL_H__
 #define _APPEARANCEMODEL_H__
 
-#include "msvc-compat.h"
-#include "CLoss.h"
+#include <clandmark/msvc-compat.h>
+#include <clandmark/CLoss.h>
 
-#include "CFeatures.h"
+#include <clandmark/CFeatures.h>
 
 #define cimg_verbosity 1		// we don't need window output capabilities of CImg
 #define cimg_display 0			// we don't need window output capabilities of CImg
-#include "CImg.h"
+#include <CImg.h>
 
-#include "CXMLInOut.h"
-#include "CTypes.h"
+#include <clandmark/CXMLInOut.h>
+#include <clandmark/CTypes.h>
 
 #include <iostream>
 #include <string>

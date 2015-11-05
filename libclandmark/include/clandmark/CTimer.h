@@ -11,7 +11,7 @@
 #ifndef __CTIMER__H_
 #define __CTIMER__H_
 
-#include "msvc-compat.h"
+#include <clandmark/msvc-compat.h>
 
 #include <cstdio>
 #include <cstdlib>

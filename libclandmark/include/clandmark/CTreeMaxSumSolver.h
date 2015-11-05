@@ -11,7 +11,7 @@
 #ifndef _CTREEMAXSUMSOLVER_H__
 #define _CTREEMAXSUMSOLVER_H__
 
-#include "CMaxSumSolver.h"
+#include <clandmark/CMaxSumSolver.h>
 
 #include <queue>
 

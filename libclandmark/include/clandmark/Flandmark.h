@@ -11,7 +11,7 @@
 #ifndef _FLANDMARK_H__
 #define _FLANDMARK_H__
 
-#include "CLandmark.h"
+#include <clandmark/CLandmark.h>
 
 namespace clandmark {
 

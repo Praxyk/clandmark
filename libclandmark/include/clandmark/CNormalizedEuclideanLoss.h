@@ -11,7 +11,7 @@
 #ifndef _CNORMALIZEDEUCLIDEANLOSS_H__
 #define _CNORMALIZEDEUCLIDEANLOSS_H__
 
-#include "CLoss.h"
+#include <clandmark/CLoss.h>
 
 namespace clandmark {
 

@@ -1,4 +1,4 @@
-#include "CNormalizedEuclideanLoss.h"
+#include <clandmark/CNormalizedEuclideanLoss.h>
 
 #include <cmath>
 

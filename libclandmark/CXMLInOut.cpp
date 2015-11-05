@@ -1,9 +1,9 @@
-#include "CXMLInOut.h"
+#include <clandmark/CXMLInOut.h>
 
-#include "base64.h"
+#include <clandmark/base64.h>
 
-#include "rapidxml_utils.hpp"
-#include "rapidxml_print.hpp"
+#include <rapidxml_utils.hpp>
+#include <rapidxml_print.hpp>
 
 using namespace clandmark;
 

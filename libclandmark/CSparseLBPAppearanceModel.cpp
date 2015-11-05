@@ -1,4 +1,4 @@
-#include "CSparseLBPAppearanceModel.h"
+#include <clandmark/CSparseLBPAppearanceModel.h>
 
 #include <cstring>
 

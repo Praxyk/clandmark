@@ -11,8 +11,8 @@
 #ifndef _CMAXSUMSOLVER_H__
 #define _CMAXSUMSOLVER_H__
 
-#include "CAppearanceModel.h"
-#include "CDeformationCost.h"
+#include <clandmark/CAppearanceModel.h>
+#include <clandmark/CDeformationCost.h>
 
 #include <vector>
 

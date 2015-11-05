@@ -11,16 +11,16 @@
 #ifndef _CLANDMARK__H__
 #define _CLANDMARK__H__
 
-#include "CAppearanceModel.h"
-#include "CDeformationCost.h"
-#include "CMaxSumSolver.h"
-#include "CFeaturePool.h"
+#include <clandmark/CAppearanceModel.h>
+#include <clandmark/CDeformationCost.h>
+#include <clandmark/CMaxSumSolver.h>
+#include <clandmark/CFeaturePool.h>
 
 #define cimg_verbosity 1		// we don't need window output capabilities of CImg
 #define cimg_display 0			// we don't need window output capabilities of CImg
 
-#include "CImg.h"
-#include "CTypes.h"
+#include <CImg.h>
+#include <clandmark/CTypes.h>
 
 #include <vector>
 

@@ -11,8 +11,8 @@
 #ifndef _CLOSS_H__
 #define _CLOSS_H__
 
-#include "msvc-compat.h"
-#include "CTypes.h"
+#include <clandmark/msvc-compat.h>
+#include <clandmark/CTypes.h>
 
 #include <string>
 

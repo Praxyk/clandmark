@@ -11,7 +11,7 @@
 #ifndef _CSPARSELBPFEATURES_H__
 #define _CSPARSELBPFEATURES_H__
 
-#include "CFeatures.h"
+#include <clandmark/CFeatures.h>
 
 #include <vector>
 

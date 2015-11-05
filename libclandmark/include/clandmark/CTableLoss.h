@@ -11,7 +11,7 @@
 #ifndef __CTABLELOSS_H__
 #define __CTABLELOSS_H__
 
-#include "CLoss.h"
+#include <clandmark/CLoss.h>
 
 #include <cstring>
 

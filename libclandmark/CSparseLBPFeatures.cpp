@@ -1,4 +1,4 @@
-#include "CSparseLBPFeatures.h"
+#include <clandmark/CSparseLBPFeatures.h>
 
 #include <cstring>
 

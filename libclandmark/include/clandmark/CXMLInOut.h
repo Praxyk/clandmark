@@ -11,8 +11,8 @@
 #ifndef _CXMLINOUT__H__
 #define _CXMLINOUT__H__
 
-#include "rapidxml.hpp"
-#include "CTypes.h"
+#include <rapidxml.hpp>
+#include <clandmark/CTypes.h>
 
 #include <iostream>
 #include <iomanip>

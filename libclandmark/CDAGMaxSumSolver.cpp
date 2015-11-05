@@ -1,4 +1,4 @@
-#include "CDAGMaxSumSolver.h"
+#include <clandmark/CDAGMaxSumSolver.h>
 
 using namespace clandmark;
 

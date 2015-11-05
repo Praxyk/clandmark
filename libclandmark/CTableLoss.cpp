@@ -1,4 +1,4 @@
-#include "CTableLoss.h"
+#include <clandmark/CTableLoss.h>
 
 using namespace clandmark;
 

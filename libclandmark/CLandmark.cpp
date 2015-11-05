@@ -1,6 +1,6 @@
-#include "CLandmark.h"
-#include "msvc-compat.h"
-#include "CTimer.h"
+#include <clandmark/CLandmark.h>
+#include <clandmark/msvc-compat.h>
+#include <clandmark/CTimer.h>
 
 #include <cfloat>
 #include <cstring>

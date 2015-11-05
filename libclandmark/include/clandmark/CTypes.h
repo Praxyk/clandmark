@@ -14,7 +14,7 @@
 #include <cfloat>
 #include <limits>
 
-#include "CLandmarkConfig.h"
+#define DOUBLE_PRECISION 1
 
 namespace clandmark {
 

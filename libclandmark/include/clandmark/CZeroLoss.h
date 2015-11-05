@@ -9,7 +9,7 @@
 #ifndef ____CZeroLoss__
 #define ____CZeroLoss__
 
-#include "CLoss.h"
+#include <clandmark/CLoss.h>
 
 namespace clandmark {
 
