@@ -5,23 +5,17 @@ INCLUDE_DIRECTORIES(
     ${CMAKE_CURRENT_BINARY_DIR}
 )
 
-SET(clandmark_libs
-    flandmark
-    ${OpenCV_LIBRARIES}
-)
-
 FIND_PACKAGE(OpenMP)
 IF(OPENMP_FOUND)
     SET(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} ${OpenMP_C_FLAGS}")
     SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${OpenMP_CXX_FLAGS}")
-    LIST(APPEND clandmark_libs gomp)
 ELSE(OPENMP_FOUND)
     SET(USE_OPENMP OFF)
 ENDIF(OPENMP_FOUND)
 
 ADD_DEFINITIONS(-fPIC)
 
-SET(flandmark_srcs
+SET(clandmark_srcs
     Flandmark.cpp
     CSparseLBPFeatures.cpp
     CSparseLBPAppearanceModel.cpp
@@ -30,11 +24,6 @@ SET(flandmark_srcs
     CTableLoss.cpp
     CZeroLoss.cpp
     CTreeMaxSumSolver.cpp
-)
-
-ADD_LIBRARY(flandmark STATIC ${flandmark_srcs})
-
-SET(clandmark_srcs
     CLandmark.cpp
     CFeaturePool.cpp
     CFeatures.cpp
@@ -45,8 +34,10 @@ SET(clandmark_srcs
     CXMLInOut.cpp
 )
 
-ADD_LIBRARY(clandmark SHARED ${clandmark_srcs})
-TARGET_LINK_LIBRARIES(clandmark ${clandmark_libs})
+ADD_LIBRARY(clandmark STATIC ${clandmark_srcs})
+IF(OPENMP_FOUND)
+    TARGET_LINK_LIBRARIES(clandmark gomp)
+ENDIF(OPENMP_FOUND)
 
 SET(clandmark_headers
     ${CMAKE_CURRENT_SOURCE_DIR}/include/clandmark/base64.h
@@ -91,5 +82,5 @@ INSTALL(
 )
 INSTALL(
     TARGETS clandmark
-    LIBRARY DESTINATION ${LIBRARY_DIR} COMPONENT Library
+    ARCHIVE DESTINATION ${LIBRARY_DIR} COMPONENT Library
 )
